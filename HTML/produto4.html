@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--Titulo que irá aparecer na parte superior do site-->
+  <title>EmpresaXYZ.com/Produtos/Perfect World</title>
+  <!--Tag <style> define o CSS do rodapé dentro do HTML-->
+  <style>
+    footer {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      margin-top: 390px;
+    }
+  </style>
+  <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="/CSS/style_produto.css">
+
+  <div class="grid">
+    <div class="column">
+      <img src="/IMAGENS/perfectworld.jpg" alt="Tibia">
+      <h3>Produto 1 - Tibia</h3>
+      <p>Perfect World ( chinês :完美世界, comumente abreviado como PW e W2 ), é um MMORPG de aventura e fantasiacom configurações tradicionais chinesas. Os jogadores podem assumir vários papéis, dependendo da escolha da raça e da classe dentro dessa raça.
+
+      <p> World International (ou PWI ) é sua marca mais recente.</p>
+
+      <p>Os personagens desenvolvem habilidades ao longo do tempo com experiência e sobem de nível por meio de recompensas de missões e podem usar e atualizar armas físicas e mágicas, e se juntar a outros jogadores para lutar contra monstros em instâncias, chefes no mundo aberto e outros jogadores. Muitas vezes, as pessoas vendem suas contas, o que economiza na compra de itens da loja de dinheiro do jogo, na experiência de cultivo e na obtenção das habilidades necessárias. Esta opção é ideal após a remoção da maioria dos métodos de criação de moedas PvE devido ao PW agora estar focado em jogadores pagantes PvP.</p>
+
+      <p>Cada jogador pode ingressar em uma guilda (se aceita) e, assim, fazer parte de uma base máxima de 200 jogadores com objetivos comuns a serem alcançados. O mapa PW é dividido em um grande número de territórios, o que dá às guildas a opção de conquistar e governar tais territórios por meio da Guerra do Território como recompensa pela propriedade, geralmente na forma de moedas que são usadas de volta para beneficiar a guilda e seus jogadores.</p>
+
+
+      <div class="product">
+        <p> Caso queira saber mais sobre Perfect World basta clicar em:<a href="https://perfectworld.com.br/" class="perfect world">Perfect World</a></p>
+        <!--Dentro da Tag <a> criamos um link que redireciona o usuário para uma página oficial do jogo-->
+      </div>
+    </div>
+  </div>
+  <!--elemento de âncora <a> com o atributo href="#" e a função onclick="fecharPagina()". A função fecharPagina() é definida no JavaScript embutido na página e usa window.close() para fechar a janela atual quando o botão de retorno for clicado.
+  E na página nova, o botão "Voltar" está configurado para chamar a função JavaScript fecharPagina(), que fecha a janela atual. Assim, ao clicar no botão de retorno, a página aberta com o "Saiba Mais" será fechada.-->
+  <a href="#" onclick="fecharPagina()">Voltar</a>
+  <script>
+    function fecharPagina() {
+      window.close(); // Fecha a janela atual
+    }
+  </script>
+
+  <footer>
+    <p>Este é o rodapé da página.</p>
+  </footer>
+</body>
+
+</html>

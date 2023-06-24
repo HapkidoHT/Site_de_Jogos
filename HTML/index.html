@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--Titulo que irá aparecer na parte superior do site-->
+  <title>EmpresaXYZ.com</title>
+  <!--Tag <div> com a classe "header" para envolver o conteúdo do cabeçalho.
+    Tag <a> com a classe "logo" é usado para exibir o logotipo. 
+    Elemento <nav> que contém uma lista não ordenada <ul> de itens de navegação.-->
+  <div class="header">
+    <a href="#" class="logo">Empresa XYZ</a>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="/HTML/sobre.html">Sobre</a></li>
+        <li><a href="/HTML/produtos.html">Produto</a></li>
+        <li><a href="/HTML/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--Tag <link> para referência do CSS-->
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+  <!--O conteúdo do banner está envolvido com uma <div> que tem a classe "banner".
+      Dentro dessa div, foi adicionado uma imagem usando a tag <img>. 
+      Em seguida, temos outra <div> com a classe "banner-text", que contém o título, a descrição e um botão de chamada para ação.
+      Temos também a Tag <h2> com o texto sobreposto ao banner.-->
+  <div class="banner">
+    <img src="/IMAGENS/steam.jpg" alt="Banner de Destaque">
+    <div class="banner-text">
+      <h2>Empresa XYZ - LOJA DE JOGOS VIRTUAIS</h2>
+    </div>
+  </div>
+  <button class="cta-button">Compre agora</button>
+  <!--tag <section> para criar a seção "Sobre Nós". 
+    O atributo id é usado para identificar a seção, permitindo que você aplique estilos específicos a ela no CSS, se necessário.
+    Usamos uma <div> com a classe "container" para envolver o conteúdo da seção.
+    Dentro da <div>, temos um <h2> com o título "Sobre Nós".
+    Temos a Tag <p> para indicar paragrafo.-->
+  <section id="about-us">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Empresa XYZ é uma empresa que tem sua base em venda de jogos digitais, desde Janeiro de 2023 no mercado, atendemos em nível nacional e nossa especialidade é RPG.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

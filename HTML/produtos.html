@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--Titulo que irá aparecer na parte superior do site-->
+  <title>EmpresaXYZ.com/Produtos</title>
+  <!--Tag <div> com a classe "header" para envolver o conteúdo do cabeçalho.
+    Tag <a> com a classe "logo" é usado para exibir o logotipo. 
+    Elemento <nav> que contém uma lista não ordenada <ul> de itens de navegação.-->
+  <div class="header">
+    <a href="#" class="logo">Empresa XYZ</a>
+    <nav>
+      <ul>
+        <li><a href="/HTML/index.html">Início</a></li>
+        <li><a href="/HTML/sobre.html">Sobre</a></li>
+        <li><a href="#">Produto</a></li>
+        <li><a href="/HTML/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--Tag <style> define o CSS do rodapé dentro do HTML-->
+  <style>
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+  <!--Tag <link> para referência do CSS-->
+  <link rel="stylesheet" href="/CSS/style.css">
+  <!--Tag <script> define a lógica do carrossel dentro do HTML-->
+  <script>
+    //variável slideIndex para rastrear o índice do slide atual. 
+    var slideIndex = 1;
+    //função changeSlide(n) é chamada quando um controle é clicado e chama a função showSlide(n) com o valor da direção (1 ou -1).
+    //showSlide(n) recebe o parâmetro n que representa a posição do slide desejado. Primeiro, verificamos se n está fora dos limites dos slides. Se for, ajustamos slideIndex para a posição correta.
+    function changeSlide(n) {
+      showSlide((slideIndex += n));
+    }
+
+    function showSlide(n) {
+      var slides = document
+        .getElementsByClassName("carousel-inner")[0]
+        .getElementsByTagName("img");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      } else if (n < 1) {
+        slideIndex = slides.length;
+      }
+      //Em seguida, percorremos todas as imagens e as ocultamos definindo display como "none". Em seguida, exibimos o slide atual ajustando display para "block".
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</head>
+
+<body>
+  <!--Tag <link> para referência do CSS-->
+  <link rel="stylesheet" href="/CSS/style_produto.css">
+
+  <!--<div> para criar um contêiner para o carrossel e aplicar estilos CSS e JavaScript para controlar o funcionamento.
+  <div> com o ID "carousel" para envolver o carrossel de imagens.
+  Dentro dele, temos o <div> com a classe "carousel-inner" que contém as imagens do carrossel.
+  Cada imagem é representada pelo elemento <img> com o atributo src definindo o caminho da imagem e o atributo alt para a descrição alternativa.
+  <a> com as classes "carousel-control prev" e "carousel-control next" para controlar a navegação do carrossel.
+  Os atributos href são definidos como "#" para manter a compatibilidade, e os eventos onclick são usados para chamar a função changeSlide() com o parâmetro que indica a direção (1 para avançar, -1 para retroceder).-->
+  <div id="carousel">
+    <div class="carousel-inner">
+      <img src="/IMAGENS/tibia.jpg" alt="Imagem 1">
+      <img src="/IMAGENS/maplestory.jpg" alt="Imagem 2">
+      <img src="/IMAGENS/grandchase.jpg" alt="Imagem 3">
+      <img src="/IMAGENS/perfectworld.jpg" alt="Imagem 3">
+    </div>
+    <a class="carousel-control prev" href="#" onclick="changeSlide(-1)">&lt;</a>
+    <a class="carousel-control next" href="#" onclick="changeSlide(1)">&gt;</a>
+  </div>
+  <!--<div> com a classe "grid" que envolve as colunas. 
+    Cada coluna é representada por um <div> com a classe "column". 
+    Dentro de cada coluna, temos uma <img> para a imagem do produto, um <h3> para o título, um <p> para a descrição e um <a> para o botão "Saiba Mais".
+    No código HTML da página atual, adicione o atributo target="_blank" à tag <a> que contém o botão "Saiba Mais". Isso fará com que o link seja aberto em uma nova guia ou janela do navegador.-->
+  <div class="grid">
+    <div class="column">
+      <img src="/IMAGENS/tibia.jpg" alt="Tibia">
+      <h3>Produto 1 - Tibia</h3>
+      <p>Tibia, jogo de RPG para computadores, é um dos maiores sucessos dentre os games onlines. Idealizado em 1995 e com um “boom” no início dos anos 2000, o RPG online gratuito alcançou uma base de usuários enorme e, até hoje, continua fazendo bastante sucesso entre os fãs do gênero.</p>
+      <a href="/HTML/produto1.html" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+    <div class="column">
+      <img src="/IMAGENS/maplestory.jpg" alt="Maple Story">
+      <h3>Produto 2 - Maple Story</h3>
+      <p>MapleStory é um MMORPG criado em maio de 2003 pela Wizet. O jogo possui gráficos bidimensionais e personagens desenhados ao estilo super deformed.</p>
+      <a href="/HTML/produto2.html" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+    <div class="column">
+      <img src="/IMAGENS/grandchase.jpg" alt="Grand Chase">
+      <h3>Produto 3 - Grand Chase</h3>
+      <p>Grand Chase é uma série de jogos desenvolvida pela empresa sul-coreana KOG' Studios, no qual o primeira versão foi um jogo on-line de luta 2D com gráficos em 3D,.</p>
+      <a href="/HTML/produto3.html" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+    <div class="column">
+      <img src="/IMAGENS/perfectworld.jpg" alt="Perfect World">
+      <h3>Produto 4 - Perfect World</h3>
+      <p>-Perfect World, é um MMORPG de aventura e fantasia em 3D com cenários tradicionais chineses. Os jogadores podem assumir vários papéis, dependendo da escolha da raça e da classe dentro dessa raça.</p>
+      <a href="/HTML/produto4.html" target="_blank" class="btn">Saiba Mais</a>
+    </div>
+  </div>
+  <!--tag <footer>, temos um parágrafo <p> que exibe o conteúdo do rodapé-->
+  <footer>
+    <ul class="contact-info">
+      <li><strong>Endereço:</strong>Rua Exemplo, 123, Cidade, Estado</li>
+      <li><strong>Telefone:</strong>(99) 9999-9999</li>
+      <li><strong>Email:</strong> <a href="contato@empresaXYZ.com">contato@empresaXYZ.com</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

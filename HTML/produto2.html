@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--Titulo que irá aparecer na parte superior do site-->
+  <title>EmpresaXYZ.com/Produtos/MapleStory</title>
+  <!--Tag <style> define o CSS do rodapé dentro do HTML-->
+  <style>
+    footer {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      margin-top: 390px;
+    }
+  </style>
+  <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="/CSS/style_produto.css">
+
+  <div class="grid">
+    <div class="column">
+      <img src="/IMAGENS/maplestory.jpg" alt="Maple Story">
+      <h3>Produto 2 - Maple Story</h3>
+      <p>Maple Story é um MMORPG (Massive Multiplayer Online Role-Play Game) criado em maio de 2003 pela Wizet. O jogo possui gráficos bidimensionais e personagens desenhados ao estilo super deformed. Diferentemente da maioria dos MMORPGs atuais, MapleStory tem um sistema de batalhas, no qual o jogador comanda os movimentos dos personagens com o teclado.</p>
+
+      <p>O jogo possui um grande sistema de Classes. Cada conta ou jogador possui um nome único que não pode ser utilizado por outra pessoa, o que garante que o seu personagem não será confundido com outro. A versão brasileira do jogo, subsidiada pela Level Up! Games, foi encerrada no dia 22 de Outubro de 2011.</p>
+
+
+      <div class="product">
+        <p> Caso queira saber mais sobre Maple Story basta clicar em:<a href="https://maplestory.nexon.net/micro-site/savior" class="maple story">Maple Story</a></p>
+        <!--Dentro da Tag <a> criamos um link que redireciona o usuário para uma página oficial do jogo-->
+      </div>
+    </div>
+  </div>
+  <!--elemento de âncora <a> com o atributo href="#" e a função onclick="fecharPagina()". A função fecharPagina() é definida no JavaScript embutido na página e usa window.close() para fechar a janela atual quando o botão de retorno for clicado.
+  E na página nova, o botão "Voltar" está configurado para chamar a função JavaScript fecharPagina(), que fecha a janela atual. Assim, ao clicar no botão de retorno, a página aberta com o "Saiba Mais" será fechada.-->
+  <a href="#" onclick="fecharPagina()">Voltar</a>
+  <script>
+    function fecharPagina() {
+      window.close(); // Fecha a janela atual
+    }
+  </script>
+
+  <footer>
+    <p>Este é o rodapé da página.</p>
+  </footer>
+</body>
+
+</html>

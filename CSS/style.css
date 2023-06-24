@@ -1,0 +1,114 @@
+.header {
+  background-color: #333;
+  overflow: hidden;
+}
+.header a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+.header a:hover {
+  background-color: gray;
+  color: black;
+}
+.header nav {
+  float: right;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ul li {
+  display: inline-block;
+}
+.header ul li a {
+  display: block;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.header ul li a:hover {
+  background-color: #333;
+  color: black;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ajuste o valor conforme necessário */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.banner-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.cta-button {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background-color: grey;
+}
+#about-us {
+  background-color: #333;
+  margin-top: 340px;
+  padding: 10px 0px;
+  color: white;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Defina os estilos para dispositivos móveis aqui */
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Defina os estilos para tablets aqui */
+}
+
+/* Estilos para desktops */
+@media (min-width: 1025px) {
+  /* Defina os estilos para desktops aqui */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 80%; /* Use porcentagem para definir a largura do container */
+  font-size: 1.2em; /* Use 'em' para definir o tamanho da fonte */
+}

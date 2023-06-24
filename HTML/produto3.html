@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--Titulo que irá aparecer na parte superior do site-->
+  <title>EmpresaXYZ.com/Produtos/GrandChase</title>
+  <!--Tag <style> define o CSS do rodapé dentro do HTML-->
+  <style>
+    footer {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      margin-top: 390px;
+    }
+  </style>
+  <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="/CSS/style_produto.css">
+
+  <div class="grid">
+    <div class="column">
+      <img src="/IMAGENS/grandchase.jpg" alt="Grand Chase">
+      <h3>Produto 1 - Tibia</h3>
+      <p>Grand Chase é uma série de jogos desenvolvida pela empresa sul-coreana KOG' Studios, no qual o primeira versão foi um jogo on-line de luta 2D com gráficos em 3D, grátis. A história foca a aventura do time Grand Chase, inicialmente composto por 3 personagens: Elesis, Lire e Arme, além da Lin, que também foi adicionada como personagem inicial. Conforme o enredo avança, entram no time os personagens: Lass, Ryan, Ronan, Amy, Jin, Sieghart, Mari, Dio, Zero, Rey, Lupus, Uno, Azin, Holy, Edel, Veigas e Uno . Grand Chase possuía servidores na Coreia do Sul, Taiuã, Brasil, Filipinas, Estados Unidos, Tailândia e Indonésia. O servidor de Taiuã nomeia o jogo como "小 侠3" (Mandarim: lit. Três Jovens Heróis).</p>
+      <p>Apesar de ser originalmente coreano, o Brasil que possuía o maior número de jogadores, com um recorde de 39.500 jogadores simultâneos. Apesar de ser essencialmente um jogo de luta, ele tem uma história de fundo para cada personagem, assim como uma para o continente Vermécia, que é o ponto de partida do jogador. Uma história sequencial do universo de Grand Chase pode ser revelada visitando todos os desafios do jogo pela ordem que são listados.</p>
+      <p>Apesar da história por trás de cada personagem ser a mesma em todos os servidores, a história de Vermécia, bem como a ortografia de certos lugares, podem variar conforme os servidores, embora os acontecimentos em que tiveram lugar são semelhantes.</p>
+      <div class="product">
+        <p> Caso queira saber mais sobre Grand Chase basta clicar em:<a href="https://www.grandchase.net/?category=NEW&page=1&lang=pt" class="grand chase">Grand Chase</a></p>
+        <!--Dentro da Tag <a> criamos um link que redireciona o usuário para uma página oficial do jogo-->
+      </div>
+    </div>
+  </div>
+  <!--elemento de âncora <a> com o atributo href="#" e a função onclick="fecharPagina()". A função fecharPagina() é definida no JavaScript embutido na página e usa window.close() para fechar a janela atual quando o botão de retorno for clicado.
+  E na página nova, o botão "Voltar" está configurado para chamar a função JavaScript fecharPagina(), que fecha a janela atual. Assim, ao clicar no botão de retorno, a página aberta com o "Saiba Mais" será fechada.-->
+  <a href="#" onclick="fecharPagina()">Voltar</a>
+  <script>
+    function fecharPagina() {
+      window.close(); // Fecha a janela atual
+    }
+  </script>
+
+  <footer>
+    <p>Este é o rodapé da página.</p>
+  </footer>
+</body>
+
+</html>
