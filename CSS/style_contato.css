@@ -1,57 +1,138 @@
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.container h2 {
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.form-group button {
-  display: inline-block;
-  padding: 10px 40px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.contact-info {
-  list-style: none;
-  padding: 0;
-}
-.contact-info li {
-  margin-bottom: 0px;
-}
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-  /* Defina os estilos para dispositivos móveis aqui */
-}
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
+  .container h2 {
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-group button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-info li {
+    margin-bottom: 0px;
+  }
+}
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Defina os estilos para tablets aqui */
-}
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
+  .container h2 {
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-group button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-info li {
+    margin-bottom: 0px;
+  }
+}
 /* Estilos para desktops */
 @media (min-width: 1025px) {
-  /* Defina os estilos para desktops aqui */
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-group button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-info li {
+    margin-bottom: 0px;
+  }
 }
